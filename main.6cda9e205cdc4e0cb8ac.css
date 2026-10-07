@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    padding: 40px;
+    background-color: #f4f5f7;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+    background-size: 20px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.workshop-block-card {
+    background: #ffffff;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    max-width: 900px;
+    width: 100%;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    box-sizing: border-box;
+}
+
+.block-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4a5568;
+    text-transform: uppercase;
+}
+
+/* ==========================================================================
+    WIDGET 1: POLLING SYSTEM
+   ========================================================================== */
+.polling-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.polling-table th,
+.polling-table td {
+    border: 1px solid #cbd5e0;
+    padding: 12px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.polling-table th {
+    background: #f8fafc;
+    font-weight: bold;
+}
+
+.msg-from {
+    font-weight: 500;
+    color: #2d3748;
+}
+
+.msg-subject {
+    color: #4a5568;
+}
+
+.msg-time {
+    font-family: monospace;
+    color: #718096;
+}
+
+/* ==========================================================================
+    WIDGET 2: DASHBOARD (STATE MANAGEMENT)
+   ========================================================================== */
+.dashboard-grid {
+    display: flex;
+    gap: 24px;
+}
+
+.dash-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-sub-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #718096;
+    margin-bottom: 12px;
+}
+
+.dash-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dash-table th,
+.dash-table td {
+    border: 1px solid #2d3748;
+    padding: 10px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.badge-count {
+    background: #000;
+    color: #fff;
+    border-radius: 12px;
+    padding: 2px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+}
+
+.task-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #2d3748;
+    margin-bottom: -1px;
+    background: #fff;
+    font-size: 14px;
+}
+
+.task-row.done {
+    text-decoration: line-through;
+    color: #a0aec0;
+}
+
+.select-project-dropdown {
+    padding: 8px;
+    border: 1px solid #2d3748;
+    font-size: 14px;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+/* ==========================================================================
+    WIDGET 3: POSTS & COMMENTS
+   ========================================================================== */
+.posts-feed-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.post-card {
+    background: #fff;
+    border: 1px solid #718096;
+    border-radius: 16px;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.avatar-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #cbd5e0;
+}
+
+.author-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.post-date {
+    font-size: 11px;
+    color: #a0aec0;
+}
+
+.post-banner-img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #cbd5e0;
+    margin-bottom: 14px;
+}
+
+.comments-section {
+    border-top: 1px solid #edf2f7;
+    padding-top: 12px;
+}
+
+.comment-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+
+.comment-text {
+    background: #f7fafc;
+    padding: 8px 12px;
+    border-radius: 8px;
+    flex-grow: 1;
+}
