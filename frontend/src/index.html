@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RxJS Ultra Workshop - Triple Widget Portal</title>
+</head>
+
+<body>
+
+    <!-- WIDGET 1: POLLING SYSTEM -->
+    <div class="workshop-block-card">
+        <div class="block-title">Incoming Messages (RxJS Polling)</div>
+        <table class="polling-table">
+            <thead>
+                <tr>
+                    <th>From</th>
+                    <th>Subject</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="polling-messages-tbody">
+                <!-- Dynamic Content -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- WIDGET 2: PROJECT MANAGEMENT DASHBOARD (STATE MANAGER) -->
+    <div class="workshop-block-card">
+        <div class="block-title">Project Management Dashboard (RxJS State Manager)</div>
+        <div class="dashboard-grid">
+
+            <div class="dash-column">
+                <div class="dash-sub-title">Stats</div>
+                <table class="dash-table">
+                    <thead>
+                        <tr>
+                            <th>Project</th>
+                            <th style="text-align: right;">Open</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dashboard-stats-tbody"></tbody>
+                </table>
+            </div>
+
+            <div class="dash-column">
+                <div class="dash-sub-title">Tasks</div>
+                <select id="project-selector-dropdown" class="select-project-dropdown"></select>
+                <div id="dashboard-tasks-box"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- WIDGET 3: SOCIAL FEED (FORKJOIN POSTS + COMMENTS) -->
+    <div class="workshop-block-card">
+        <div class="block-title">Social Platform Feed (RxJS Combined Streams)</div>
+        <div class="posts-feed-container" id="social-feed-viewport">
+            <!-- Dynamic Content -->
+        </div>
+    </div>
+
+</body>
+
+</html>

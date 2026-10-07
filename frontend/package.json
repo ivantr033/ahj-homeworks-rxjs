@@ -1,0 +1,25 @@
+{
+  "name": "rxjs-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "devDependencies": {
+    "@babel/core": "7.21.3",
+    "@babel/preset-env": "7.20.2",
+    "babel-loader": "9.1.2",
+    "css-loader": "6.7.3",
+    "html-loader": "4.2.0",
+    "html-webpack-plugin": "5.5.0",
+    "mini-css-extract-plugin": "2.7.5",
+    "rxjs": "7.8.0",
+    "style-loader": "3.3.2",
+    "webpack": "5.76.3",
+    "webpack-cli": "5.0.1",
+    "webpack-dev-server": "4.13.1",
+    "webpack-merge": "5.8.0"
+  }
+}
